@@ -1,0 +1,78 @@
+# =========================
+# Visual Studio / VS Code
+# =========================
+.vs/
+.vscode/
+.idea/
+
+# =========================
+# Build Results
+# =========================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]emp/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Backup / Cache
+# =========================
+*.bak
+*.cache
+*.log
+*.pdb
+*.tmp
+*.swp
+*.swo
+AssemblyInfoInputs.cache
+
+# =========================
+# Test Results
+# =========================
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+
+# Frontend Build
+wwwroot/dist/
+
+# =========================
+# Publish
+# =========================
+publish/
+
+
+
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Dumps
+# =========================
+*.stackdump
+*.dmp
