@@ -66,22 +66,18 @@ public class Solution
 {
     public int[] TwoSum(int[] nums, int target)
     {
-        int[] sum = new int[2];
+        var seen = new Dictionary<int, int>();
 
-        for (int i = 0; i < nums.Length - 1; i++)
+
+        for (int i = 0; i < nums.Length; i++)
         {
 
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    sum[0] = i;
-                    sum[1] = j;
-                }
-            }
+            int index = target - nums[i];
+            if(seen.TryGetValue(index, out int j))
+                return new[] { i, j };
         }
 
-        return sum;
+        return Array.Empty<int>();
 
     }
 }
