@@ -74,7 +74,9 @@ public class Solution
 
             int index = target - nums[i];
             if(seen.TryGetValue(index, out int j))
-                return new[] { i, j };
+                return new[] { j,i };
+
+            seen[nums[i]] = i;
         }
 
         return Array.Empty<int>();
